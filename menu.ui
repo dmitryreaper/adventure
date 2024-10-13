@@ -36,7 +36,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Играть</string>
+     <string>Новая игра</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -49,7 +49,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Настройки</string>
+     <string>Загрузить</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">

@@ -5,6 +5,7 @@ menu::menu(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::menu)
 {
+    start->show();
     ui->setupUi(this);
 }
 
@@ -12,4 +13,5 @@ menu::~menu()
 {
     delete ui;
 }
+
 

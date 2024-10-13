@@ -10,10 +10,20 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    menu.cpp
+    menu.cpp \
+    view.cpp \
+    zombie.cpp \
+    zombieattack.cpp \
+    zombiemoving.cpp \
+    zombiestanding.cpp
 
 HEADERS += \
-    menu.h
+    menu.h \
+    view.h \
+    zombie.h \
+    zombieattack.h \
+    zombiemoving.h \
+    zombiestanding.h
 
 FORMS += \
     menu.ui
@@ -22,3 +32,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc
