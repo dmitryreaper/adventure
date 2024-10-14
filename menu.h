@@ -2,25 +2,33 @@
 #define MENU_H
 
 #include <QMainWindow>
+#include <QDebug>
+#include <QMenuBar>
+#include <QMovie>
+
+#include <QPixmap>
+#include <QLabel>
+#include <QPalette>
+#include <QBrush>
+#include <QResizeEvent>
+#include <QPushButton>
 #include "view.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class menu; }
-QT_END_NAMESPACE
-
-class menu : public QMainWindow
-{
+class Menu : public QMainWindow {
     Q_OBJECT
 
 public:
-    menu(QWidget *parent = nullptr);
-    ~menu();
-
-private slots:
-    void on_pushButton_clicked();
+    Menu(QWidget *parent = nullptr);
+    ~Menu();
 
 private:
-    Ui::menu *ui;
+    Menu *window;
+    viewExample *newgame;
+
+
+private slots:
+    void showNewGameWindow();
+    void closeWindow();
 };
 
-#endif // MENU_H
+#endif

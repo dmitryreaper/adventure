@@ -25,8 +25,7 @@ HEADERS += \
     zombiemoving.h \
     zombiestanding.h
 
-FORMS += \
-    menu.ui
+FORMS +=
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

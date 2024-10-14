@@ -34,9 +34,9 @@ viewExample::viewExample()
 void viewExample::_init_view_elements()
 {
 
-  mZombieAttack.setPos(100,  425);
-  mZombieMoving.setPos(150,  425);
-  mZombieNothing.setPos(200, 425);
+  mZombieAttack.setPos(100,  100);
+  mZombieMoving.setPos(150,  100);
+  mZombieNothing.setPos(200, 100);
   mZombie.setPos(300,425);
 
   mScene.addItem(&mZombieAttack);

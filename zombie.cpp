@@ -187,4 +187,3 @@ void zombie::attack()
   mState = eAnimateState::Attack;
   mCurrentFrame = 0;
 }
-
