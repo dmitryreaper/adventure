@@ -8,7 +8,7 @@ zombie::zombie()
 
   QPair<QPixmap, spriteData> tmp;
 
-  tmp.first.load(":/zombies/pics/zombie_standing.png");
+  tmp.first.load(":/pics/zombie_standing.png");
   tmp.second.mWidth         = 37;
   tmp.second.mHeight        = 48;
   tmp.second.mCurrentFrame  = 0;
@@ -17,7 +17,7 @@ zombie::zombie()
   tmp.second.mBorder        = 0;
   mvPixmaps.push_back(tmp);
 
-  tmp.first.load(":/zombies/pics/zombie_attack.png");
+  tmp.first.load(":/pics/zombie_attack.png");
   tmp.second.mWidth         = 45;
   tmp.second.mHeight        = 48;
   tmp.second.mCurrentFrame  = 0;
@@ -26,7 +26,7 @@ zombie::zombie()
   tmp.second.mBorder        = 2;
   mvPixmaps.push_back(tmp);
 
-  tmp.first.load(":/zombies/pics/zombie_moving.png");
+  tmp.first.load(":/pics/zombie_moving.png");
   tmp.second.mWidth         = 39;
   tmp.second.mHeight        = 48;
   tmp.second.mCurrentFrame  = 0;
@@ -36,7 +36,7 @@ zombie::zombie()
   mvPixmaps.push_back(tmp);
 
   connect(&mTimer, &QTimer::timeout, this, &zombie::next_frame);
-  mTimer.start(100);
+  mTimer.start(50);
 }
 //------------------------------------------------------------------------------
 QRectF zombie::boundingRect() const

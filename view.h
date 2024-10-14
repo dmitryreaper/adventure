@@ -3,6 +3,8 @@
 
 #include <QGraphicsView>
 #include <QGraphicsScene>
+#include <QPixmap>
+#include <QLabel>
 
 #include "zombieattack.h"
 #include "zombiemoving.h"
@@ -19,10 +21,6 @@ private:
   void _init_view_elements();
 
 private slots:
-  void btn_Bomb_clicked(Qt::MouseButton);
-  void btn_B_clicked(Qt::MouseButton);
-  void btn_C_clicked(Qt::MouseButton);
-
   void keyReleaseEvent(QKeyEvent*)override;
 
 private:

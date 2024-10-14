@@ -6,7 +6,7 @@ zombieStanding::zombieStanding()
   setAcceptedMouseButtons(Qt::LeftButton);
   setAcceptHoverEvents(true);
 
-  mPixMap.load(":/zombies/pics/zombie_standing.png");
+  mPixMap.load(":/pics/zombie_standing.png");
 
   mWidth  = 37;
   mHeight = 48;

@@ -11,7 +11,6 @@ class zombieStanding : public QObject, public QGraphicsItem
   Q_OBJECT
 public:
   zombieStanding();
-
   QRectF boundingRect() const override;
   void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
 

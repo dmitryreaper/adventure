@@ -21,6 +21,6 @@ private slots:
 
 private:
     Ui::menu *ui;
-    viewExample *start;
 };
+
 #endif // MENU_H

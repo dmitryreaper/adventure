@@ -7,7 +7,7 @@ zombieAttack::zombieAttack()
   setAcceptedMouseButtons(Qt::LeftButton);
   setAcceptHoverEvents(true);
 
-  mPixMap.load(":/zombies/pics/zombie_attack.png");
+  mPixMap.load(":/pics/zombie_attack.png");
 
   mWidth  = 45;
   mHeight = 48;
